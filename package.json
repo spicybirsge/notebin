@@ -1,0 +1,22 @@
+{
+  "name": "notebin",
+  "version": "1.0.0",
+  "description": "Save notes, documents, codes and more! And access and share them with the world!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aerect.js": "^2.0.1",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0"
+  }
+}
