@@ -5,14 +5,19 @@ const express = require("express")
 const app = express()
 const logger = require('morgan');
 const aerect = require('aerect.js')
+const bodyParser = require('body-parser')
 app.set('view-engine', 'ejs')
 app.use(logger('dev'));
 const error = require('./middleware/error');
-const createError = require('http-errors')
-app.use(express.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(express.static('public'))
 app.use(error)
 
+app.use('/api', require('./routes/api'))
+app.get('/api', (req, res) => {
+    res.render('api.ejs')
+})
 
 app.get('/:ID', (req, res) => {
     const ID = req.params.ID
@@ -31,6 +36,7 @@ app.get('/:ID', (req, res) => {
 app.get('/', (req, res) => {
     res.render('home.ejs')
 })
+
 app.post('/', (req, res) => {
 const ID = aerect.generateID(10)
  const note = req.body.text   

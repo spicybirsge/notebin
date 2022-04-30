@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="notes, notebin, codebin, developement, documents, cloud, cloudcomputing, free, secure">
+  <meta content="notebin.cf - API" property="og:title" />
+    <meta content="Save notes, documents, codes and more! And access and share them with the world!" property="og:description" />
+  <meta content="#272822" data-react-helmet="true" name="theme-color" />
+  <meta content='/media/logo.png' property="og:image" />
+  <link rel="shortcut icon" href="/media/logo.png" icon created by Freepik - Flaticon>
+  <title>Notebin - API</title>
+  <link href="/css/api.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
+</link>
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
+</script>
+  <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js">
+</script>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
+</head>
+
+<body>
+  <h2 style="color: black;"><header class="api" style="float: right; color: black;"><a style="color: black;" href="/">HOME</a>
+  </header></h2>
+    <h1>Notebin - API for notebin creation</h1>
+    <br>
+    <br>
+  <div id="docs">
+    <p style="color: white; text-align: center;"><b>Request URL:</b> https://www.notebin.cf/api/create</p>
+<br>
+<p style="color: white; text-align: center;  margin-right: 200px;"><b>Fetch method:</b> POST</p>
+<br>
+<p style="color: white; text-align: center;  margin-right: 50px;"><b>Headers:</b> Content-Type: application/json</p>
+<br>
+<div id="code" style="   text-align: center;">
+<p style="color: white; text-align: center;  margin-right: 248px;"><b> Request Body:</b></p>
+</div>
+<br>
+<div id="code2" style="   text-align: center;">
+<p style="color: white; text-align: center;  margin-right: 189px;"><b>Success Output (200):</b></p>
+</div>
+  </div>
+  <script>
+    const codemirror = CodeMirror(document.getElementById("code"), {
+
+  lineWrapping: true,
+  styleActiveLine: true, 
+
+        theme: 'monokai',
+        value: '{"text":"Your notebins text"}'
+});
+codemirror.setSize(350,30);
+  
+  
+  </script>
+    <script>
+      const codemirror1 = CodeMirror(document.getElementById("code2"), {
+  
+    lineWrapping: true,
+    styleActiveLine: true, 
+  
+          theme: 'monokai',
+          value: '{"url":"https://www.notebin.cf/123"}'
+  });
+  codemirror1.setSize(350,30);
+    
+    
+    </script>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+
+</html>

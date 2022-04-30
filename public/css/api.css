@@ -5,6 +5,20 @@ html, body {
    height: 100%;
  background-color: #403a37;
  }
+ .CodeMirror {
+    text-align: left!important;
+    display: block;
+    margin-left: 610px;
+
+   
+  
+    box-sizing: border-box;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+    
+ }
 .api {
   font-weight: bold;
   margin-top:10px;
@@ -40,21 +54,7 @@ top: 0;
     font-size: 16px;
     resize: vertical;
   }
-  .CodeMirror {
-    text-align: left!important;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-    height: 97vh;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
 
-    font-size: 16px;
-    resize: vertical;
-  }
   button[type=submit] {
     display: block;
     margin: 0 auto;
