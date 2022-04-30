@@ -10,7 +10,8 @@ html, body {
     display: block;
     margin-left: 610px;
 
-   
+    margin-left: auto;
+    margin-right: auto;
   
     box-sizing: border-box;
 
