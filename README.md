@@ -1,7 +1,7 @@
 # Notebin
 
 - A codebin which you can use to store your stuff
-- The public one is discontinued, self host this and run it for your needs.
+- Link: https://notebin.cf
 
 # Self hosting
 
