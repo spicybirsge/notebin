@@ -3,6 +3,8 @@
 - A codebin which you can use to store your stuff
 - Link: https://notebin.cf
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ePrxoz?referralCode=HN1He9)
+
 # Self hosting
 
 1. You will need a mongodb server.
