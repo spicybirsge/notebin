@@ -1,4 +1,4 @@
-require('dotenv').config() //comment this when running on production
+//require('dotenv').config() //comment this when running on production
 require('./mongoDB')()
 const notes = require('./database/notebin')
 const express = require("express")
