@@ -12,7 +12,7 @@
 3. Run `npm install`.
 4. Run `node server.js`.
 5. If your running this in a production environment comment the `require('dotenv').config()` part.
-6. Wanna deploy this with ease? click the "deploy to railway" button.
+6. Wanna deploy this with ease? click the "deploy on railway" button.
 
 # Credits
 
