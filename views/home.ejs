@@ -34,12 +34,12 @@
   <br>
     <h1>Notebin - Save notes, documents, codes and more!</h1>
     <br>
-  <form action="/" method="POST" style="width: 85%; margin : auto;">
+  <form action="/" method="POST" style="width: 85%; margin : auto;" onsubmit="load()">
     <h2><label for="text">Enter Your Text:</label></h2>
     <div class="buttonHolder">
   <textarea type="text" id="text" name="text" spellcheck="false" ></textarea>
   <br>
-  <button type="submit">Create notebin</button>
+  <button id="creator" type="submit">Create notebin</button>
 </div>
   </form>
   <script>
@@ -51,7 +51,12 @@
         theme: 'monokai'
 });
     codemirror.setSize(null, 800);
-  
+  function load() {
+    var x = document.getElementById('creator')
+    x.disabled = true
+    x.innerText = 'Creating notebin...'
+
+  }
   
   </script>
   <br>
