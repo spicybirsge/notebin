@@ -43,11 +43,11 @@
   </form>
   <script>
     const codemirror = CodeMirror.fromTextArea(document.getElementById("text"), {
-  lineNumbers: true,
-  lineWrapping: true,
-  styleActiveLine: true, 
       lineNumbers: true,
-        theme: 'monokai'
+  lineWrapping: true,
+  styleActiveLine: true,
+        theme: 'monokai',
+        mode: "javascript"
 });
     codemirror.setSize(null, 800);
   function load() {
