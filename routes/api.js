@@ -17,7 +17,7 @@ router.post('/create', [
                 res.status(500).json({error: "An unexpected error has occured please try again."})
             } else {
                 await new notebins({ID: ID, views: 0, note: note, created: Date.now()}).save()
-                return res.status(200).json({url: `https://notebin.cyclic.app/${ID}`})
+                return res.status(200).json({url: `https://notebin.cf/${ID}`})
             }
         })
 
